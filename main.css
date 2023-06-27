@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    /* font-family:'Roboto', sans-serif;; */
+
+}
+:root{
+    --color-primary: #e65100;
+    --color-primary-variant: #f57c00;
+    --color-bg-1:#2d3b43 ;
+    --color-bg-2: #3e515b;
+    --color-bg-3:#4d6471 ;
+    --color-bg-4: #5c7988;
+    --color-light:#97adba ;
+    --color-white:hsl(0, 0%, 90%) ;
+    
+    /* another color theme */
+    /* --color-primary:#ffe0b2 ;
+    --color-primary-variant:#ffcc80 ;
+    --color-bg-1:#520c61 ;
+    --color-bg-2: #6d1371;
+    --color-bg-3: #7c1779;
+    --color-bg-4: #8c1e80;
+    --color-light: #cd8ec0;
+    --color-white:hsl(0, 0%, 90%) ; */
+
+    --container-width-lg: 88%;
+    --container-width-md: 92%;
+
+    --transition: all 400ms ease;
+
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background: var(--color-bg-3);
+    color: var(--color-light);
+    line-height: 1.7;
+}
+h1, h2 {
+    line-height: 1.1;
+    font-weight: 400;
+
+}
+h1{
+    font-size: 4rem;
+    color: var(--color-white);
+}
+h2{
+    font-size: 3.5rem;
+}
+a{
+    color: var(--color-light);
+    transition: var(--transition);
+}
+a:hover{
+    color: var(--color-primary);
+}
+.container{
+    width: var(--container-width-lg);
+    margin: 0 auto;
+    max-width: 2160px;
+}
+img{
+    display: block;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* navbar */
+nav{
+    height: calc(16px * 5);
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+/* nav class scroll using js */
+.window-scrolled{
+    background: var(--color-bg-2);
+    border-bottom: 0.2rem solid var(--color-bg-3);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+}
+.nav_container{
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* for mobiles and tablets */
+.nav_toggle-btn{
+    display: none;
+}
+.navlinks{
+    display: flex;
+    gap: 4rem;
+}
+
+.nav_socials{
+    display: flex;
+    gap: 1rem;
+}
+.nav_socials a{
+    height: 2.5rem;
+    width: 2.5rem;
+    background: linear-gradient(var(--color-primary-variant), var(--color-primary));
+    border-radius: .5rem;
+    color: var(--color-bg-4);
+    display: grid;
+    place-items: center;
+    transition: var(--transition);
+}
+.nav_socials a:hover{
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.4);
+}
+
+
+/* header */
+header{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    background: linear-gradient(var(--color-bg-3), var(--color-bg-1));
+    overflow: hidden;
+}
+.header_container{
+    display: grid;
+    grid-template-columns:40% 50% ;
+    gap: 10%;
+    margin-top: 10rem;
+    position: relative;
+}
+.header_image-bg{
+    background: var(--color-bg-4);
+    height: 22rem;
+    width: 16rem;
+    position: absolute;
+}
+.header_image-lg{
+    width: 29rem;
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+    filter: saturate(0)
+    brightness(0.3);
+    transition: var(--transition);
+}
+.header_image-sm{
+    width: 28rem;
+    height: 28rem;
+    overflow: hidden;
+    position: absolute;
+    left: 6rem;
+    top: 6rem;
+    transition: var(--transition);
+}
+.left:hover .header_image-sm{
+    opacity: 0;
+
+}
+.left:hover .header_image-lg{
+    filter: saturate(1) brightness(1);
+    border:1rem solid var(--color-bg-3) ;
+    top: 0;
+    left: 0;
+
+}
+.right .header_head{
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+.empty{
+    height: 3.5rem;
+    width: 18rem;
+    background: var(--color-bg-2);
+    border-radius: calc(3.5rem / 2);
+    margin-bottom: 3.5rem;
+    box-shadow: inset 0 1rem 1rem rgba(0, 0, 0, 0.3);
+}
+.header_tag{
+    color: var(--color-primary-variant);
+}
+.right p{
+    margin-top: 2rem;
+    width: 85%;
+}
+/* only shows on tablets and phones */
+.header_btn-md{
+    display: none;
+}
