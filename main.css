@@ -127,11 +127,22 @@ nav{
 .nav_socials a:hover{
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.4);
 }
+.contact_btn{
+    background: var(--color-light);
+    color: var(--color-bg-1);
+    padding: .5rem 1.5rem;
+    border: 0;
+    border-radius: .5rem;
+}
+.contact_btn:hover{
+    background: linear-gradient(135deg,var(--color-primary), var(--color-primary-variant));
+    color: var(--color-bg-1);
+}
 
 
 /* header */
 header{
-    width: 100vw;
+    max-width: 100vw;
     height: 100vh;
     position: relative;
     top: 0;
@@ -204,3 +215,69 @@ header{
 .header_btn-md{
     display: none;
 }
+.header_frames{
+    position: absolute;
+    top: 88vh;
+    right: 44rem;
+    transition: var(--transition);
+}
+.header_frame{
+    width: 14rem;
+    border: 0.4rem solid var(--color-bg-3);
+    box-shadow: 0 0 4rem rgba(0, 0, 0, 0.5);
+    position: absolute;
+    transform: rotate(-10deg);
+    transform-origin: bottom left;
+    transition: var(--transition);
+}
+.header_frame:nth-child(2){
+    transform: rotate(20deg);
+    top: -2rem;
+    left: 2rem;
+}
+.header_frames:hover .header_frame{
+    transform: rotate(0);
+}
+.header_frames:hover .header_frame:nth-child(2){
+    top: 0;
+    left: 15rem;
+}
+
+/* general contact styles */
+/* .contact_btn{
+    color: var(--color-bg-1);
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    cursor: pointer
+    var(--transition)var(--transition);
+}
+.header_btn{
+    background: linear-gradient(-30deg, var(--color-primary-variant), var(--color-primary), var(--color-primary-variant));
+    position: absolute;
+    right: 6%;
+    bottom: -3rem;
+
+}
+.header_btn:hover{
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.3);
+    transform: translateY(-1rem);
+    color: var(--color-bg-1);
+}
+.contact_btn i{
+    font-size: 3.5rem;
+    position: absolute;
+}
+
+.contact_btn p{
+    font-size: 1rem;
+    font-weight: 600;
+    width: 10rem;
+    height: 10rem;
+}
+.contact_btn p span{
+    position: absolute;
+    transform-origin: 0.3rem 5rem;
+} */
