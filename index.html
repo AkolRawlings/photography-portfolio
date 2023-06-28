@@ -1,99 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Photography Portfolio</title>
     <!-- fontawesome cdn link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
     <link
-  rel="stylesheet"
-  href="https://unicons.iconscout.com/release/v4.0.0/css/unicons.css"
-/>
-<!-- google fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/unicons.css"
+    />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- swiper js link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <!-- end of swiper js link -->
 
-
-
-    <link rel="stylesheet" href="main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
     <nav>
-        <div class="container nav_container">
-            <a href="index.html" class="nav_logo">MAJOR</a>
-            <ul class="navlinks">
-                <li><a href="#home">home</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#gallery">gallery</a></li>
-                <li><a href="#exhibitions">exibitions</a></li>
-            </ul>
-            <!-- contact button -->
-            <a href="mailto:akolrawlings@gmail.com" class="contact_btn header_btn">
-               Contact me
+      <div class="container nav_container">
+        <a href="index.html" class="nav_logo">MAJOR</a>
+        <ul class="navlinks">
+          <li><a href="#">home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#gallery">gallery</a></li>
+          <li><a href="#exhibitions">exibitions</a></li>
+        </ul>
+        <!-- contact button -->
+        <a href="mailto:akolrawlings@gmail.com" class="contact_btn header_btn">
+          Contact me
+        </a>
+        <!-- end of contact button -->
+        <ul class="nav_socials">
+          <li>
+            <a href="#" target="_blank"
+              ><i class="fa fa-linkedin-square" aria-hidden="true"></i>
             </a>
-            <!-- end of contact button -->
-            <ul class="nav_socials">
-                <li><a href="#" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                </a></li>
-                <li><a href="#" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i>
-                </a></li>
-                <li><a href="#" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>
-                </a></li>
-            </ul>
-            <button class="nav_toggle-btn" id="nav_toggle-open"><i class="fa fa-bars" aria-hidden="true"></i>
-            </button>
-            <button class="nav_toggle-btn" id="nav_toggle-close"><i class="fa fa-times" aria-hidden="true"></i>
-            </button>
-
-        </div>
+          </li>
+          <li>
+            <a href="#" target="_blank"
+              ><i class="fa fa-twitter-square" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank"
+              ><i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+        <button class="nav_toggle-btn" id="nav_toggle-open">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+        <button class="nav_toggle-btn" id="nav_toggle-close">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </button>
+      </div>
     </nav>
     <!-- end of nav page -->
 
     <header>
-        <div class="container header_container">
-            <div class="left">
-                <div class="header_image-bg"></div>
-                <div class="header_image-lg">
-                    <img src="./images/pexels-amina-filkins-5561456.jpg" alt="">
-                </div>
-                <div class="header_image-sm">
-                    <img src="./images/pexels-amina-filkins-5561456.jpg" alt="">
-                </div>
-            </div>
-            <div class="right">
-                <div class="header_head">
-                    <div class="empty header_empty">
-
-                    </div>
-                    <a href="" class="header_tag">Best Photographer</a>
-                </div>
-                <h1>See the Beauty of the world through my Lense</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, quisquam eius eos non officiis modi, sequi maxime nostrum odit alias ipsam excepturi reiciendis?</p>
-                <a href="mailto:akolrawlings@gmail.com" class="header_btn-md">Let's Talk</a>
-            </div>
+      <div class="container header_container">
+        <div class="left">
+          <div class="header_image-bg"></div>
+          <div class="header_image-lg">
+            <img src="./images/pexels-amina-filkins-5561456.jpg" alt="" />
+          </div>
+          <div class="header_image-sm">
+            <img src="./images/pexels-amina-filkins-5561456.jpg" alt="" />
+          </div>
         </div>
+        <div class="right">
+          <div class="header_head">
+            <div class="empty header_empty"></div>
+            <a href="" class="header_tag">Best Photographer</a>
+          </div>
+          <h1>See the Beauty of the world through my Lense</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Consectetur, quisquam eius eos non officiis modi, sequi maxime
+            nostrum odit alias ipsam excepturi reiciendis?
+          </p>
+          <a href="mailto:akolrawlings@gmail.com" class="header_btn-md"
+            >Let's Talk</a
+          >
+        </div>
+      </div>
     </header>
     <div class="header_frames">
-        <div class="header_frame">
-            <img src="./images/pexels-fox-225157.jpg" alt="header frame one">
-        </div>
-        <div class="header_frame">
-            <img src="./images/pexels-inmortal-producciones-336232.jpg" alt="header frame one">
-        </div>
+      <div class="header_frame">
+        <img src="./images/pexels-fox-225157.jpg" alt="header frame one" />
+      </div>
+      <div class="header_frame">
+        <img
+          src="./images/pexels-inmortal-producciones-336232.jpg"
+          alt="header frame one"
+        />
+      </div>
     </div>
-   
+
     <!-- end of header -->
     <section id="about">
-        <div class="container about_container">
-            <h2 class="about_title">About <br> Rawlings</h2>
-            <!-- <a href="maito:akolrawlings@gmail.com" class="contact"></a> -->
+      <div class="container about_container">
+        <h2 class="about_title">
+          About <br />
+          Rawlings
+        </h2>
+        <div class="about_left">
+          <div class="about_image">
+            <div class="about_image-bg"></div>
+            <div class="about_image-lg">
+              <img
+                src="./images/pexels-sam-forson-154243.jpg"
+                alt="about image"
+              />
+            </div>
+            <div class="about_image-sm">
+              <img
+                src="./images/pexels-sam-forson-154243.jpg"
+                alt="about image"
+              />
+            </div>
+          </div>
         </div>
+        <div class="about_right">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit illo
+            deserunt, eius corrupti temporibus harum minus fugit quasi amet
+            nostrum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit illo
+            deserunt, eius corrupti temporibus harum minus fugit quasi amet
+            nostrum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit illo
+            deserunt, eius corrupti temporibus harum minus fugit quasi amet
+            nostrum.
+          </p>
+          <!-- contact button -->
+          <a href="mailto:akolrawlings@gmail.com" class="contact_btn about_btn">
+            Contact me
+          </a>
+          <!-- end of contact button -->
+        </div>
+      </div>
     </section>
-    
+    <!-- end of about section -->
+    <section id="gallery">
+      <div class="container gallery_container">
+        <div class="gallery_head">
+          <h2 class="gallery_title">My Gallery</h2>
+          <div class="empty gallery_empty"></div>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, ex
+          culpa labore delectus tempore illum sapiente totam officia facere qui
+          fugiat praesentium, perspiciatis similique.
+        </p>
+      </div>
+    </section>
+
+    <!-- js swiper js link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- end of js swiper js link -->
 
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
