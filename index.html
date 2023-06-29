@@ -26,6 +26,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
+
     <!-- end of swiper js link -->
 
     <link rel="stylesheet" href="main.css" />
@@ -77,10 +78,10 @@
         <div class="left">
           <div class="header_image-bg"></div>
           <div class="header_image-lg">
-            <img src="./images/pexels-amina-filkins-5561456.jpg" alt="" />
+            <img src="./images/home.jpg" alt="" />
           </div>
           <div class="header_image-sm">
-            <img src="./images/pexels-amina-filkins-5561456.jpg" alt="" />
+            <img src="./images/home.jpg" alt="" />
           </div>
         </div>
         <div class="right">
@@ -123,16 +124,10 @@
           <div class="about_image">
             <div class="about_image-bg"></div>
             <div class="about_image-lg">
-              <img
-                src="./images/pexels-sam-forson-154243.jpg"
-                alt="about image"
-              />
+              <img src="./images/best.jpg" alt="about image" />
             </div>
             <div class="about_image-sm">
-              <img
-                src="./images/pexels-sam-forson-154243.jpg"
-                alt="about image"
-              />
+              <img src="./images/best.jpg" alt="about image" />
             </div>
           </div>
         </div>
@@ -161,24 +156,62 @@
       </div>
     </section>
     <!-- end of about section -->
+
     <section id="gallery">
-      <div class="container gallery_container">
-        <div class="gallery_head">
+      <div class="container gallery__container swiper mySwiper">
+        <div class="gallery__head">
           <h2 class="gallery_title">My Gallery</h2>
-          <div class="empty gallery_empty"></div>
+          <!-- <div class="empty gallery_empty"></div> -->
         </div>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, ex
           culpa labore delectus tempore illum sapiente totam officia facere qui
-          fugiat praesentium, perspiciatis similique.
+          fugiat praesentium, perspiciatis similique. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Repellendus aliquid accusamus veniam
+          molestiae culpa nobis, pariatur vitae dolor possimus nemo!
         </p>
+        <div class="swiper-wrapper">
+          <article class="swiper-slide">
+            <img src="./images/photo9.jpg" />
+          </article>
+          <article class="swiper-slide">
+            <img src="./images/photo7.jpg" />
+          </article>
+          <article class="swiper-slide">
+            <img src="./images/photo6.jpg" />
+          </article>
+          <article class="swiper-slide">
+            <img src="./images/photo5.jpg" />
+          </article>
+          <article class="swiper-slide">
+            <img src="./images/photo4.jpg" />
+          </article>
+          <article class="swiper-slide">
+            <img src="./images/photo3.jpg" />
+          </article>
+          <article class="swiper-slide">
+            <img src="./images/photo2.jpg" />
+          </article>
+          <article class="swiper-slide">
+            <img src="./images/photo1.jpg" />
+          </article>
+          <article class="swiper-slide">
+            <img src="./images/photo8.jpg" />
+          </article>
+          <article class="swiper-slide">
+            <img src="./images/photo10.jpg" />
+          </article>
+          <article class="swiper-slide">
+            <img src="./images/about.jpg" />
+          </article>
+        </div>
+        <div class="swiper-pagination"></div>
       </div>
     </section>
+    <!-- end of gallery -->
 
     <!-- js swiper js link -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <!-- end of js swiper js link -->
-
     <script src="main.js"></script>
   </body>
 </html>

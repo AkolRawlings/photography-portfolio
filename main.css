@@ -151,19 +151,20 @@ header{
 }
 .header_container{
     display: grid;
-    grid-template-columns:40% 50% ;
+    grid-template-columns:38% 50% ;
     gap: 10%;
-    margin-top: 10rem;
+    margin-top: 6rem;
     position: relative;
 }
 .header_image-bg{
     background: var(--color-bg-4);
     height: 22rem;
-    width: 16rem;
+    width: 22rem;
     position: absolute;
 }
 .header_image-lg{
-    width: 29rem;
+    width: 26rem;
+    height: 26rem;
     position: relative;
     top: 1rem;
     left: 1rem;
@@ -172,12 +173,12 @@ header{
     transition: var(--transition);
 }
 .header_image-sm{
-    width: 28rem;
-    height: 28rem;
+    width: 25rem;
+    height: 25rem;
     overflow: hidden;
     position: absolute;
-    left: 6rem;
-    top: 6rem;
+    left: 4rem;
+    top: 4rem;
     transition: var(--transition);
 }
 .left:hover .header_image-sm{
@@ -325,10 +326,10 @@ header{
 }
 .about_image-sm{
     position: absolute;
-    top: 3rem;
-    left: 8rem;
-    height: 22rem;
-    width: 22rem;
+    top: 2rem;
+    left: 6rem;
+    height: 25rem;
+    width: 25rem;
     overflow: hidden;
     transition: var(--transition);
 }
@@ -354,4 +355,47 @@ header{
 .about_right .about_btn{
     margin-top: 1rem;
     padding: .6rem 2rem;
+}
+
+
+/* Gallery Section */
+#gallery{
+    margin-top: 12rem;
+}
+ .gallery__head{
+    display: flex;
+    justify-content: space-between;
+
+}
+.gallery__container p{
+    width: 45rem;
+    margin-top: 2rem;
+}
+.swiper-wrapper{
+    margin-top: 5rem;
+    height: 37rem;
+    padding-bottom: 5rem;
+}
+.swiper-slide{
+    border: .5rem solid var(--color-light);
+    height:29rem;
+    max-height: 36rem;
+    overflow: hidden;
+    transition: var(--transition);
+    /* height: 29rem;
+    width: 15rem;
+    overflow: hidden; */
+}
+.swiper-slide:hover{
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.4);
+}
+.swiper-slide img{
+    filter: saturate(0);
+    transition: var(--transition);
+}
+.swiper-slide:hover img{
+    filter: saturate(1);
+}
+.swiper-pagination-bullet{
+    background: #f57c00;
 }
